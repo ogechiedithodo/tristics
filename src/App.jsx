@@ -5,7 +5,7 @@ import LogInPage from "./Pages/LogInPage";
 import Table from "./Pages/Table";
 import GetKeeperPage from "./Pages/GetKeeperPage";
 import CheckinLogin from "./Pages/CheckinLogin";
-import Dashboard from "./Pages/Dashboard";
+import Dashboard from "./Pages/Tab";
 
 const App = () => {
   const [showPage, setShowPage] = useState(false);
