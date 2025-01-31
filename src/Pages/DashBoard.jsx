@@ -17,7 +17,7 @@ import Img9 from "../assets/w4.avif"
 import Img10 from "../assets/w5.avif"
 
 
-const DashBoard = () => {
+const Dashboard = () => {
   const [search, setSearch] = useState(""); 
   const [filteredCards, setFilteredCards] = useState([]); 
   const cardDetails = [
@@ -165,4 +165,4 @@ const DashBoard = () => {
   );
 };
 
-export default DashBoard;
+export default Dashboard;
