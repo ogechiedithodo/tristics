@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from "react";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { createHashRouter, RouterProvider } from "react-router-dom";
 import LandingPage from "./Pages/LandingPage";
 import LogInPage from "./Pages/LogInPage";
-import DashBoard from "./Pages/Dashboard";
 import Table from "./Pages/Table";
 import GetKeeperPage from "./Pages/GetKeeperPage";
 import CheckinLogin from "./Pages/CheckinLogin";
+import Dashboard from "./Pages/Dashboard";
 
 const App = () => {
   const [showPage, setShowPage] = useState(false);
@@ -15,9 +15,9 @@ const App = () => {
     return () => clearTimeout(timer);
   }, []);
 
-  const router = createBrowserRouter([
+  const router = createHashRouter([
     { path: "/", element: showPage ? <LogInPage /> : <LandingPage /> },
-    { path: "/dashboard", element: <DashBoard /> }, 
+    { path: "/dashboard", element: <Dashboard /> }, 
     { path: "/checkin-login", element: <CheckinLogin /> }, 
     { path: "/get-keeper", element: <GetKeeperPage /> }, 
     { path: "table/:id", element: <Table /> },
