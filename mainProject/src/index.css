@@ -1,0 +1,174 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+.MainBody {
+    width: 100%;
+    height: auto;
+    /* background-color: red; */
+}
+
+.AppBody {
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(32, 107, 62);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: whitesmoke;
+    /* padding-bottom: 5%; */
+    gap: 10px;
+
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+    & img {
+        background-color: rgba(32, 107, 62, 0.877);
+        animation-name: spin;
+        animation-duration: 3s;
+    }
+
+}
+@keyframes spin {
+    0%{
+
+    }
+    50%{
+        scale: 1;
+    }
+    100%{
+        transform: rotate(360deg);
+        border-radius: 50%;
+    }
+}
+
+.LoginPage {
+    width: 100%;
+    height: 100vh;
+    min-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20PX;
+    background-color: rgb(32, 107, 62);
+    padding-bottom: 8%;
+
+}
+
+.loginbody {
+    width: 30%;
+    height: 70%;
+    background-color: whitesmoke;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+    gap: 20px;
+    color: rgb(32,107,62);
+    padding-top: 20PX;
+
+}
+
+.InputHolder {
+    width: 80%;
+    height: 40%;
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: column;
+    padding-top: 20PX;
+    gap: 20px;
+
+    & input {
+        height: 40%;
+        padding: 5px;
+        outline: none;
+    }
+    input:hover{
+        border: 2PX solid rgb(32, 107, 62);
+        cursor: pointer;
+    }
+    & span{
+        color: rgb(32, 107, 62);
+        cursor: pointer;
+    }
+    & small{
+        color: black;
+    }
+}
+
+.LogInbtn {
+    width: 80%;
+    height: 40%;
+    /* background-color: blue; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    & span {
+        color: rgb(32, 107, 62);
+        cursor: pointer;
+    }
+    & P {
+        color: black;
+    }
+
+}
+
+.btn {
+    width: 100%;
+    height: 25%;
+    background-color: rgb(32, 107, 62);
+    border-radius: 5px;
+    border: none;
+    color: whitesmoke;
+
+}
+.btn:hover{
+    width: 100%;
+    height: 25%;
+    background-color: whitesmoke;
+    border-radius: 5px;
+    color: whitesmoke;
+    border:2px solid rgb(32, 107, 62);
+    
+}
+
+.btn1 {
+    width: 100%;
+
+    height: 40%;
+    /* background-color: whitesmoke; */
+    border-radius: 5px;
+    color: whitesmoke;
+    background-color: rgb(32, 107, 62);
+    border: none;
+    outline: none;
+    min-width: 100%;
+    
+
+}
+.btn1:hover{
+    background-color: rgba(32, 107, 62, 0.733);
+    color: whitesmoke;
+    cursor: pointer;
+    
+}
+@media  (max-width: 500px) {
+    .LoginPage {
+        width: 100%;
+    }
+    .loginbody {
+        width: 90%;
+        & input{
+            width: 100%;
+            height: 40%;
+        }
+    }
+}

@@ -1,0 +1,258 @@
+
+*{
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+.DashBoard{
+    width: 100%;
+    height: 100vh;
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: column;  
+  
+}
+.Header{
+  width: 100%;
+  height: 20%;
+  background-color: rgb(32, 107,62);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid rgb(32, 107,62);
+  padding: 5px;
+  color: white;
+}
+.DashBInput{
+  width: 20%;
+  height: 30%;
+  /* background-color: white; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  position: relative;
+
+  & p{
+    position: relative;
+    left: 27px;
+    color: gray;
+  }
+}
+
+.Dashinputpp{
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  padding-left: 40px;
+  border-radius: 50px;
+  border: none;
+}
+
+.EmoloyeeWriteUp{
+  width: 40%;
+}
+
+.button{
+  width: 40px;
+  height: 40px;
+  border-radius: 40px;
+  border: none;
+  cursor: pointer;
+}
+.buttonCheckIn{
+  width: 60px;
+  height: 60px;
+  border-radius: 40px;
+  border: none;
+  color: whitesmoke;
+  cursor: pointer;
+  background-color: rgb(32, 107,62);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+/* .chekin{
+  width: 10%;
+  height: 39%;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: red;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+} */
+/* .logo{
+  width: 10%;
+  height: 80%;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 100px;
+  cursor: pointer;
+} */
+
+/* .imgDas{
+  width: 100%;
+  height: 100%;
+} */
+/* .dashBProfile{
+  width: 50px;
+  height: 50px;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 50px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+
+.person{
+  width: 100%;
+  height: 60%;
+}
+
+.CardContainer{
+  width: 100%;
+  height: 80%;
+  overflow: y;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 23px;
+  padding-left: 70px;
+  /* background-color: red; */
+  /* align-items: center; */
+  justify-content: center;
+}
+.card {
+    width: 20%; 
+    height: 60%; 
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    /* margin: 16px auto; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .card-image {
+    width: 50%;
+    height: 50%;
+    border-radius: 60px;
+    background-color: #f4f4f4;
+    border: 2px solid rgb(32, 107,62);
+
+
+/* & p{
+  width: 100%;
+  width: 100%;
+  object-fit: cover;
+
+} */
+  }
+
+  
+  .imgg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    border-radius: 60px;
+  }
+  
+  .card-content {
+    flex: 1; /* Allocate space for the content */
+    padding: 16px;
+    font-family: Arial, sans-serif;
+    color: #333;
+    /* overflow-y: auto; Allows scrolling if content overflows */
+  }
+  
+  .card-content h2 {
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+    color: #000;
+  }
+  
+  .card-content p {
+    font-size: 0.9rem;
+    margin-bottom: 4px;
+    color: #555;
+  }
+
+  @media (max-width: 500px) {
+    .DashBoard {
+      width: 100%;
+      height: auto;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .Header {
+      height: 20%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 5px;
+    }
+  
+    .chekin {
+      width: 20%;
+      height: 30%;
+      font-size: 12px;
+      padding: 5px;
+    }
+  
+    .logo {
+      width: 20%;
+      height: 20%;
+    }
+  
+    .dashBProfile {
+      width: 40px;
+      height: 40px;
+    }
+  
+    .CardContainer {
+      display: flex;
+      padding-left: 0;
+      gap: 15px;
+    }
+  
+    .card {
+      width: 30%;
+      height: 70%;
+      padding: 10px;
+    }
+  
+    .card-image {
+      width: 100%;
+      height: 100%;
+    }
+  
+    .card-content {
+      padding: 10px;
+    }
+  
+    .card-content h2 {
+      font-size: 1rem;
+    }
+  
+    .card-content p {
+      font-size: 0.8rem;
+    }
+  }
+  
+  
